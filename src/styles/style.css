@@ -1,15 +1,14 @@
 @font-face {
     font-family: "Roboto";
-    src: url("/src/fonts/roboto/RobotoSlab-Regular.ttf") format("truetype");
+    src: url("/assets/fonts/roboto/RobotoSlab-Regular.ttf") format("truetype");
 }
 @font-face {
     font-family: "Titilium";
-    src: url("/src/fonts/titilium/TitilliumWeb-Bold.ttf") format("truetype");
+    src: url("/assets/fonts/titilium/TitilliumWeb-Bold.ttf") format("truetype");
 }
-
 @font-face {
     font-family: "Cormorant";
-    src: url("/src/fonts/cormorant/CormorantGaramond-Regular.ttf") format("truetype")
+    src: url("/assets/fonts/cormorant/CormorantGaramond-Regular.ttf") format("truetype")
 }
 
 body {

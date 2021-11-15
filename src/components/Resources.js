@@ -1,8 +1,8 @@
-import RockpaperImage from "/src/images/rockpaper.png"
-import LibraryImage from "/src/images/library.png"
-import SketchImage from "/src/images/sketch.png"
-import TictactoeImage from "/src/images/tictactoe.png"
-import CalculatorImage from "/src/images/calculator.png"
+import RockpaperImage from "/assets/images/rockpaper.png"
+import LibraryImage from "/assets/images/library.png"
+import SketchImage from "/assets/images/sketch.png"
+import TictactoeImage from "/assets/images/tictactoe.png"
+import CalculatorImage from "/assets/images/calculator.png"
 import React from "react"
 
 const Descriptions = {
