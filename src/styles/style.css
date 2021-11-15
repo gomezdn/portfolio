@@ -171,9 +171,17 @@ body {
     *{
         flex-direction: column;
         flex-wrap: wrap;
+        max-width: 100%;
+        height: auto;
         justify-content: center;
         align-items: center;
         row-gap: 2em;
+    }
+
+    .navBar {
+        font-size: .85em;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 1fr);
     }
 
     .projectDiv {
@@ -194,5 +202,6 @@ body {
     }
     .headerTitle {
         padding-top: 5%;
+        font-size: 3em;
     }
 }
