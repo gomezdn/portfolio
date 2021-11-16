@@ -15,12 +15,13 @@ body {
     max-width: 100vw;
     max-height: 100vh;
     user-select: none;
+    background-color: black;
+    background-image: url("/assets/images/texture.png")
 }
 
 #root {
     max-width: fit-content;
     height: auto;
-    background-color: white;
 }
 
 .app {
@@ -55,10 +56,7 @@ body {
     justify-self: center;
     font-size: 2em;
     height: 100%;
-}
-
-.keyword {
-    color: black;
+    width: 80%;
 }
 
 .projectDiv {
@@ -71,9 +69,7 @@ body {
     column-gap: 5em;
     justify-content: flex-start;
     align-items: center;
-    border-radius: 3px;
-    border: 6px solid;
-    background-color: rgb(240, 240, 240);
+    background-color: rgba(255, 255, 255, 0.075);
 }
 
 .imgDiv {
@@ -87,13 +83,13 @@ body {
 }
 
 .projectLink {
-    font-size: 1.5em;
-    text-shadow: 1px 1px 15px rgb(100, 100, 100);
+    font-size: 1.25em;
+    text-shadow: 1px 1px 15px black;
 }
 
 .projectLink:hover {
     scale: 1.05;
-    color: rgb(131, 27, 27);
+    color: goldenrod;
 }
 
 .projectTextDiv {
@@ -104,14 +100,19 @@ body {
     align-items: center;
     justify-content: center;
     padding: 3% 1% 3% 0;
+    color: rgb(214, 214, 214);
 }
 
 .projectTitle {
-    font-family: "Titilium";
+    font-family: "Roboto";
+    font-size: 2.2em;
+    color: goldenrod;
 }
 
 .projectDescription {
     font-family: "Roboto";
+    padding-right: 4%;
+    text-align: center;
 }
 
 .header {
@@ -125,7 +126,7 @@ body {
     font-size: 6.5em;
     padding-top: 2.5%;
     align-self: flex-end;
-    text-shadow: 15px 1px 20px rgb(163, 163, 163);
+    color: rgb(241, 241, 241);
 
 }
 
@@ -139,7 +140,8 @@ body {
     text-decoration: none;
     cursor: pointer;
     font-family: "Roboto";
-    color: black;
+    color: rgb(241, 241, 241);
+    font-size: 1.05em;
 }
 
 .navBar {
@@ -154,17 +156,30 @@ body {
     font-family: "Roboto";
     font-size: 1em;
     align-self: center;
+    color: rgb(241, 241, 241);
 }
 
+.tabButton:hover {
+    color: goldenrod;
+}
+
+a:hover {
+    color: goldenrod;
+}
 
 
 .aboutMeText {
     font-size: 0.65em;
     font-family: "Roboto";
     text-align: justify;
-    padding: 5% 10% 5% 10%;
+    padding: 5% 5% 5% 5%;
     line-height: 1.5em;
-    color: grey;
+    color: rgb(88, 88, 88);
+    background-color: rgba(255, 255, 255, 0.808);
+}
+
+.keyword {
+    color: rgb(131, 86, 4);
 }
 
 @media (max-width: 700px) {
@@ -176,15 +191,22 @@ body {
         row-gap: 2em;
     }
 
-    .navBar {
+    .navBarTabs, .navBarLinks {
         font-size: .85em;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 1fr);
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .projectDiv {
         max-width: 100%;
         margin: auto;
+        padding: 3%;
     }
 
     .projectTextDiv {
@@ -197,9 +219,9 @@ body {
         height: auto;
         margin: 5% 6% 0 5%; 
         padding: 0;
-        margin: 0 0 0 1%;;
         scale: 0.95;
         border: none;
+        overflow: hidden;
     }
     .headerTitle {
         padding-top: 5%;

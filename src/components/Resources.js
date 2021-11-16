@@ -25,9 +25,9 @@ const Descriptions = {
     through a pretty serious learning and practice of vanilla <span className="keyword">JavaScript</span>, <span className="keyword"> 
     HTML</span> and 
     <span className="keyword"> CSS</span> styling. At the same time, I'm going to university where I'm studying for a programming 
-    degree (or a technician as a mid-way title), so I'm building a solid theoretical background while I learn by doing.
+    degree, so I'm building a solid theoretical background while I learn by doing.
     My interests also comprehend music, photography, films, nature, science, and learning about everything. If you
-    feel interested in hiring me please just contact me, I'd be very pleased to meet you.</p>,
+    feel interested in hiring me please just contact me, I'd be very pleased to meet you!</p>,
 }
 
 const Links = {

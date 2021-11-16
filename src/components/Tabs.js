@@ -9,7 +9,7 @@ const Tabs = {
             <ProjectDiv
                 demo={Links.sketchDemo}
                 imgSrc={Images.sketch}
-                title="Etch a sketch!"
+                title="Etch a sketch"
                 description={Descriptions.sketch}
                 repo={Links.sketchRepo}
             />
