@@ -3,51 +3,55 @@ import ProjectDiv from "./ProjectDiv"
 import {Links, Images, Descriptions} from "./Resources"
 
 
-const Tabs = {
-    projects : 
+function projectsTab(lang) {
+    return (
         <div className="projectsTab contentTab">
             <ProjectDiv
                 demo={Links.sketchDemo}
                 imgSrc={Images.sketch}
                 title="Etch a sketch"
-                description={Descriptions.sketch}
+                description={Descriptions.sketch[lang]}
                 repo={Links.sketchRepo}
             />
             <ProjectDiv
                 demo={Links.calculatorDemo}
                 imgSrc={Images.calculator}
-                title="Just another calculator"
-                description={Descriptions.calculator}
+                title="Calculator"
+                description={Descriptions.calculator[lang]}
                 repo={Links.calculatorRepo}
             />
             <ProjectDiv
                 demo={Links.libraryDemo}
                 imgSrc={Images.library}
                 title="Library app"
-                description={Descriptions.library}
+                description={Descriptions.library[lang]}
                 repo={Links.libraryRepo}
             />
             <ProjectDiv
                 demo={Links.tictactoeDemo}
                 imgSrc={Images.tictactoe}
                 title="Tic tac toe"
-                description={Descriptions.tictactoe}
+                description={Descriptions.tictactoe[lang]}
                 repo={Links.tictactoeRepo}
             />
             <ProjectDiv
                 demo={Links.rockpaperDemo}
                 imgSrc={Images.rockpaper}
                 title="Rock, paper, scissors!"
-                description={Descriptions.rockpaper}
+                description={Descriptions.rockpaper[lang]}
                 repo={Links.rockpaperRepo}
             />
-        </div>,
-    
-    aboutMe :
-    <div className="aboutMeTab contentTab">
-        <p className="aboutMeText">{Descriptions.aboutMe}</p>
-    </div>
+        </div>
+    )
+}
+
+function aboutMeTab(lang) {
+    return (
+        <div className="aboutMeTab contentTab">
+            <p className="aboutMeText">{Descriptions.aboutMe[lang]}</p>
+        </div>
+    )
 }
 
 
-export default Tabs
+export {aboutMeTab, projectsTab}

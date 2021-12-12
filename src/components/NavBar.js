@@ -1,6 +1,6 @@
 import React from "react"
-import Tabs from "./Tabs"
-
+import {SectionTitles} from "./Resources"
+import {projectsTab, aboutMeTab} from "./Tabs"
 
 function NavBar(props) {
 
@@ -9,22 +9,32 @@ function NavBar(props) {
             <div className="navBarTabs">
                 <button className="tabButton"
                         onClick={ () => {
-                            props.updateContent(Tabs.aboutMe)
+                            props.updateContent(projectsTab(props.language))
                         }}
-                        type="button">About me
+                        type="button">{SectionTitles.projects[props.language]}
                 </button>
-               
+
                 <button className="tabButton"
                         onClick={ () => {
-                            props.updateContent(Tabs.projects)
+                            props.updateContent(aboutMeTab(props.language))
                         }}
-                        type="button">Projects
+                        type="button">{SectionTitles.aboutMe[props.language]}
                 </button>
             </div>
             
             <div className="navBarLinks">
                 <a href={props.git} target="_blank">Github</a>
                 <a href={props.linkedin} target="_blank">LinkedIn</a>
+            </div>
+
+            <div>
+                <select className="languageSelect" onChange={e => {
+                    props.updateLanguage(e.target.value)
+                    props.updateContent(projectsTab(e.target.value))
+                }}>
+                    <option value="spanish" selected>Spanish</option>
+                    <option value="english">English</option>
+                </select>
             </div>
         </div>
     )

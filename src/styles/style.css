@@ -2,10 +2,7 @@
     font-family: "Roboto";
     src: url("/assets/fonts/roboto/RobotoSlab-Regular.ttf") format("truetype");
 }
-@font-face {
-    font-family: "Titilium";
-    src: url("/assets/fonts/titilium/TitilliumWeb-Bold.ttf") format("truetype");
-}
+
 @font-face {
     font-family: "Cormorant";
     src: url("/assets/fonts/cormorant/CormorantGaramond-Regular.ttf") format("truetype")
@@ -113,6 +110,7 @@ body {
     font-family: "Roboto";
     padding-right: 4%;
     text-align: center;
+    line-height: 1.7em;
 }
 
 .header {
@@ -167,6 +165,12 @@ a:hover {
     color: goldenrod;
 }
 
+.languageSelect {
+    color: goldenrod;
+    background-color: rgb(29, 29, 29);
+    border: 1.5px solid white;
+    padding: 0.3em;
+}
 
 .aboutMeText {
     font-size: 0.65em;

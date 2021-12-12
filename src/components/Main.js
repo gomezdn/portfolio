@@ -1,6 +1,7 @@
 import React from "react"
 
 function Main(props) {
+    
     React.useEffect(() => {
         let tab = document.querySelectorAll(".contentTab")
         tab.forEach(tab => {
