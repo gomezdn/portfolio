@@ -104,4 +104,4 @@ const Images = {
     tictactoe : TictactoeImage,
     calculator : CalculatorImage    
 }
-export { Descriptions, Links, Images, SectionTitles}
+export { Descriptions, Links, Images, SectionTitles }
