@@ -92,7 +92,7 @@ const Links = {
     libraryRepo : "https://github.com/gomezdn/library/",
     rockpaperRepo : "https://github.com/gomezdn/rock-paper-scissors/",
 
-    linkedin : "https://www.linkedin.com",
+    linkedin : "https://www.linkedin.com/in/gomezdn",
     github : "https://github.com/gomezdn",
     
 }
