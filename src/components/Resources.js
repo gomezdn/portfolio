@@ -1,12 +1,21 @@
+import React from "react"
+
 import RockpaperImage from "/assets/images/rockpaper.png"
 import LibraryImage from "/assets/images/library.png"
 import SketchImage from "/assets/images/sketch.png"
 import TictactoeImage from "/assets/images/tictactoe.png"
 import CalculatorImage from "/assets/images/calculator.png"
-import React from "react"
+import GirfsearchImage from "/assets/images/gifsearch.png"
 
 const Descriptions = {
 
+    gifsearch : {
+        english : `A gif search app made with React, consulting the Tenor API that responds with a list of gifs
+        based on a search term. It also has a paginator and search suggestions as you type in.`,
+        spanish : `Un buscador de gifs hecho en React que consulta la API de Tenor la cual devuelve una lista de gifs en base
+        a la búsqueda ingresada. Tiene un paginador que despliega 10 conjuntos de gifs diferentes y sugerencias
+        de búsqueda a medida que se escribe en el input.`
+    },
     tictactoe : {
         english :  `A simple 2 player (non AI) Tic Tac Toe game, made using HTML, vanilla JavaScript and CSS. 
         You can replay against each other as many times as you want.`,
@@ -80,12 +89,14 @@ const SectionTitles = {
 }
 
 const Links = {
+    gifsearchDemo : "https://gomezdn.github.io/gif-search/",
     tictactoeDemo : "https://gomezdn.github.io/tic-tac-toe/",
     calculatorDemo : "https://gomezdn.github.io/calculator/",
     sketchDemo : "https://gomezdn.github.io/etch-a-sketch/",
     libraryDemo : "https://gomezdn.github.io/library/",
     rockpaperDemo : "https://gomezdn.github.io/rock-paper-scissors/",
 
+    gifsearchRepo : "https://github.com/gomezdn/gif-search/",
     tictactoeRepo : "https://github.com/gomezdn/tic-tac-toe/",
     calculatorRepo : "https://github.com/gomezdn/calculator/",
     sketchRepo : "https://github.com/gomezdn/etch-a-sketch/",
@@ -98,6 +109,7 @@ const Links = {
 }
 
 const Images = {
+    gifsearch : GirfsearchImage,
     rockpaper : RockpaperImage,
     library : LibraryImage,
     sketch : SketchImage,
