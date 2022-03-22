@@ -7,6 +7,13 @@ function projectsTab(lang) {
     return (
         <div className="projectsTab contentTab">
             <ProjectDiv
+                demo={Links.moviesDemo}
+                imgSrc={Images.movies}
+                title="Movies"
+                description={Descriptions.movies[lang]}
+                repo={Links.moviesRepo}
+            />          
+            <ProjectDiv
                 demo={Links.gifsearchDemo}
                 imgSrc={Images.gifsearch}
                 title="Gif search app"

@@ -6,9 +6,16 @@ import SketchImage from "/assets/images/sketch.png"
 import TictactoeImage from "/assets/images/tictactoe.png"
 import CalculatorImage from "/assets/images/calculator.png"
 import GirfsearchImage from "/assets/images/gifsearch.png"
+import MoviesImage from "/assets/images/movies.png"
 
 const Descriptions = {
 
+    movies : {
+      english : `Website for searching movies or tv series that requests the API from The Movie Database, displaying their relevant info as well actors's or directors's.
+                 Made with React and Typescript. Chakra UI for styles.`,
+      spanish : `Sitio donde buscar películas o series consultando la API de The Movie Database, pudiendo ver el detalle de las mismas así como el de actores y directores.
+                 Hecho con React y Typescript, y Chakra UI para estilos.`
+    },
     gifsearch : {
         english : `A gif search app made with React, consulting the Tenor API that responds with a list of gifs
         based on a search term. It also has a paginator and search suggestions as you type in.`,
@@ -89,6 +96,7 @@ const SectionTitles = {
 }
 
 const Links = {
+    moviesDemo : "https://movies-gomezdn.vercel.app/",
     gifsearchDemo : "https://gomezdn.github.io/gif-search/",
     tictactoeDemo : "https://gomezdn.github.io/tic-tac-toe/",
     calculatorDemo : "https://gomezdn.github.io/calculator/",
@@ -96,6 +104,7 @@ const Links = {
     libraryDemo : "https://gomezdn.github.io/library/",
     rockpaperDemo : "https://gomezdn.github.io/rock-paper-scissors/",
 
+    moviesRepo : "https://github.com/gomezdn/movies",
     gifsearchRepo : "https://github.com/gomezdn/gif-search/",
     tictactoeRepo : "https://github.com/gomezdn/tic-tac-toe/",
     calculatorRepo : "https://github.com/gomezdn/calculator/",
@@ -109,6 +118,7 @@ const Links = {
 }
 
 const Images = {
+    movies : MoviesImage,
     gifsearch : GirfsearchImage,
     rockpaper : RockpaperImage,
     library : LibraryImage,
@@ -116,4 +126,5 @@ const Images = {
     tictactoe : TictactoeImage,
     calculator : CalculatorImage    
 }
+
 export { Descriptions, Links, Images, SectionTitles }
