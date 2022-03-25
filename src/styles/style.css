@@ -8,12 +8,21 @@
     src: url("/assets/fonts/cormorant/CormorantGaramond-Regular.ttf") format("truetype")
 }
 
+@font-face {
+  font-family: 'saira';
+  src: url('/assets/fonts/saira/Saira-Bold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 body {
     max-width: 100vw;
     max-height: 100vh;
     user-select: none;
     background-color: black;
-    background-image: url("/assets/images/texture.png")
+    background-image: url("/assets/images/background.jpg");
+    background-size: contain;
+    background-position: center;
 }
 
 #root {
@@ -57,16 +66,17 @@ body {
 }
 
 .projectDiv {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5em;
     align-self: flex-end;
     margin-right: 6.5%;
     width: 90%;
     height: auto;
-    display: flex;
-    flex-direction: row;
-    column-gap: 5em;
+    border-radius: 5px;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.075);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .imgDiv {
@@ -81,7 +91,7 @@ body {
 
 .projectLink {
     font-size: 1.25em;
-    text-shadow: 1px 1px 15px black;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .projectLink:hover {
@@ -90,20 +100,21 @@ body {
 }
 
 .projectTextDiv {
-    text-align: justify;
+    font-family: "saira";
     display: flex;
     row-gap: 0.9em;
+    text-align: justify;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 3% 1% 3% 0;
-    color: rgb(214, 214, 214);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .projectTitle {
-    font-family: "Roboto";
-    font-size: 2.2em;
-    color: goldenrod;
+    font-family: "saira";
+    font-size: 1.6em;
+    color: rgb(238, 163, 0);
 }
 
 .projectDescription {
