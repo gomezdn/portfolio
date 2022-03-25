@@ -53,34 +53,44 @@ const Descriptions = {
     },
 
     aboutMe : {
-        english :  
+        english :
+          <>  
             <p>
                 Hi there! I'm <span className="keyword">Darío</span> Gómez, a junior web 
-                developer from <span className="keyword">Buenos Aires, Argentina</span>. 
-                I'm really keen on technology, <span className="keyword"> programming</span>, arts and aesthetics in general; I enjoy both
-                the working logic behind a good looking interface, and the implementation of the interface itself.
-                I'm currently learning <span className="keyword">React</span> taking online courses and practicing on my own, after going
-                through a pretty serious learning and practice of vanilla <span className="keyword">JavaScript</span>, <span className="keyword"> 
-                HTML</span> and 
-                <span className="keyword"> CSS</span> styling. At the same time, I'm going to university where I'm studying for a programming 
-                degree, so I'm building a solid theoretical background while I learn by doing.
-                My interests also comprehend music, photography, films, nature, science, and learning about everything. If you
-                feel interested in hiring me please just contact me, I'd be very pleased to meet you!
-            </p>,
-        spanish : 
+                developer from <span className="keyword">Buenos Aires, Argentina</span>.
+            </p>
+            <br/>
             <p>
-                ¡Buenas! Me llamo <span className="keyword">Darío</span> Gómez y soy un desarrollador web junior
-                de <span className="keyword">Buenos Aires, Argentina</span>. 
-                Me encanta la tecnología, la <span className="keyword">programación</span>, el diseño y la estética en general;
-                me interesan y disfruto tanto la lógica que subyace debajo de una interfaz atractiva, como la implementación de la interfaz en sí.
-                Actualmente me encuentro aprendiendo <span className="keyword">React</span> a través de cursos online y de manera autodidacta,
-                después de haber atravesado un aprendizaje intenso de <span className="keyword">JavaScript</span>, <span className="keyword"> 
-                HTML</span> y<span className="keyword"> CSS</span>, practicando a diario. A su vez,
-                me encuentro cursando la Licenciatura en Informática en la Universidad Nacional de Quilmes, por
-                lo que, además de aprender a través de la práctica, voy incorporando fundamentos teóricos que le den sustento a la misma.
-                Mis intereses también abarcan la música, la fotografía, el cine, la naturaleza, las ciencias, entre otras cosas.
-                Si estás interesado en trabajar conmigo, no dudes en contactarme ¡Estaré encantado de conocerte!
-            </p> 
+              I specialize in <span className="keyword">ReactJS</span> and the ecosystem around <span className="keyword">Javascript</span>.
+
+            </p>
+            <br/>
+            <p>
+                I enjoy both the logic behind a good looking interface, and the implementation of the interface itself,
+                so I'm currently learning <span className="keyword">NodeJS</span> in order to be able to develop applications
+                integrally. At the same time, I'm going to university where I'm studying for a Computer Science degree,
+                so I'm building a solid theoretical background while I learn by doing.
+            </p>
+          </>,
+        spanish : 
+          <>  
+            <p>
+                ¡Buenas! Me llamo <span className="keyword">Darío</span> Gómez y soy un desarrollador web 
+                 de <span className="keyword">Buenos Aires, Argentina</span>.
+            </p>
+            <br/>
+            <p> 
+                Me especializo en <span className="keyword">ReactJS</span> y el ecosistema en torno a <span className="keyword">Javascript</span>.
+            </p>
+            <br/>
+            <p>    
+                Me interesan y disfruto tanto la lógica que subyace debajo de una interfaz atractiva, como la implementación de
+                la interfaz en sí. Por lo que actualmente me encuentro aprendiendo <span className="keyword">NodeJs</span> y conceptos de
+                backend para poder desarrollar aplicaciones web integralmente. A su vez, me encuentro cursando la Licenciatura
+                en Informática en la Universidad Nacional de Quilmes, por lo que, además de aprender a través de la práctica,
+                voy incorporando fundamentos teóricos que le den sustento a la misma.
+            </p>
+          </>
     }
 }
 
